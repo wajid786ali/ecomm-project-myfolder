@@ -1,0 +1,49 @@
+<div class="home-slider mt-1">
+<div id="carouselExampleCaptions" class="carousel slide">
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+    <div class="carousel-item" *ngFor="let item of featureProducts; let isFirst = first"  [class.active]="isFirst">
+    <a routerLink="/details/{{item.id}}"><img src="{{item.imgUrl}}" class="" alt="{{item.imgUrl}}"></a>
+    <div class="carousel-caption d-none d-md-block">
+        <h5>{{item.name}}</h5>
+        <p>{{item.description}}</p>
+    </div>
+    </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+<section class="pt-5 pb-5">
+ <div class="container">
+    <div class="text-center mb-4"><h2>Feature Products</h2></div>  
+   <div class="row">
+    <div class="col-sm-3 mb-4" *ngFor="let item of trendyProducts">       
+      <div class="pro-sec">
+        <div class="pro-img"><a routerLink="/details/{{item.id}}">
+           <img src="{{item.imgUrl}}" alt="{{item.imgUrl}" /></a>
+        </div>
+        <div class="proCont">
+         <div class="h"><a routerLink="/details/{{item.id}}">{{item.name}}</a></div>  
+         <p>Price : <span class="price">{{item.price}}</span></p> 
+         <p>Color : {{item.color}}</p>        
+       </div>
+       <div class="proBtn">
+         <a routerLink="/details/{{item.id}}">View Details</a>  
+         <a href="#">Add To Cart</a>  
+       </div>
+      </div>  
+    </div>
+   </div>
+ </div>   
+</section>    

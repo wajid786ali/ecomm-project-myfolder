@@ -1,0 +1,32 @@
+<div class="mt-2">
+    <div class="container text-center">
+        <div class="sendEnq mt-5">
+        <h2 class="mb-4 text-center">Update Product</h2>
+        <p class="text-center text-success mb-2">{{successMsg}}</p>
+        <form #updateProduct="ngForm" (ngSubmit)="updatePro(updateProduct.value)">
+            <div class="mb-4">
+            <input type="text" name="name" class="form-control" placeholder="Enter Name" ngModel="{{updateProMsg?.name}}">
+            </div>
+            <div class="mb-4">
+            <input type="text" name="category" class="form-control" placeholder="Enter Category" ngModel="{{updateProMsg?.category}}">
+            </div>
+            <div class="mb-4">
+            <input type="text" name="price" class="form-control" placeholder="Enter Price" ngModel="{{updateProMsg?.price}}">
+            </div>
+            <div class="mb-4">
+            <input type="text" name="color" class="form-control" placeholder="Enter Color" ngModel="{{updateProMsg?.color}}">
+            </div>
+            <div class="mb-4">
+            <textarea name="description" class="form-control" placeholder="Enter description" ngModel="{{updateProMsg?.description}}">                
+            </textarea>
+            </div>
+            <div class="mb-4">
+            <input type="text" name="imgUrl" class="form-control" placeholder="Enter img url" ngModel="{{updateProMsg?.imgUrl}}">
+            </div>
+            <button type="submit" class="btn btn-primary">Update Product</button>          
+        </form>
+    </div>
+    </div>
+    </div>
+    
+    

@@ -1,0 +1,25 @@
+
+<div class="container mt-5 checkout">
+  <div class="mb-5 pb-3 border-bottom text-center"><h3>Checkout</h3></div>  
+  <div class="row">
+    <div class="col-md-6 text-center">
+     <div class="checkoutFrm">
+     <form #orderData="ngForm" (ngSubmit)="orderNow(orderData.value)">                 
+        <div class="mb-4">
+         <input type="email" name="email" class="form-control" placeholder="Email" ngModel>
+        </div>
+        <div class="mb-4">
+            <input type="text" name="address" class="form-control" placeholder="Enter Address" ngModel>
+          </div>
+        <div class="mb-4">
+          <input type="text" name="contact" class="form-control" placeholder="Enter Contact No" ngModel>
+        </div>
+        <div><button type="submit">Order Now</button></div> 
+     </form>
+     </div>      
+    </div>
+    <div class="col-md-6 text-center">
+      <h4 class="mb-3">Payable Amount : {{payableAmount}} </h4>
+      <h5>Pay Cash on Delivery </h5>
+    </div>
+</div>

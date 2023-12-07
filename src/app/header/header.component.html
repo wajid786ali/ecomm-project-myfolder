@@ -1,0 +1,68 @@
+<header>  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container">
+        <a class="navbar-brand" routerLink="home">Compamy Logo</a>        
+        <div *ngIf="menuType==='default'" class="homeSearch d-flex"> 
+           <input type="search" name="email" class="form-control" (keyup)="searchProduct($event)"
+           (blur)="hideSearch()" #searchInput placeholder="Enter Search" ngModel  required>
+           <button type="button" name="search" (click)="searchSubmit(searchInput.value)" class="btn btn-outline-success" id="search">
+            <i class="fa fa-search"></i> 
+           </button>
+           <div class="searchSeggestion" *ngIf="searchProduct">
+             <ul>
+               <li *ngFor="let item of searchSeggestion"><a (mousedown)="redirectToLink(item.id)">{{item.name}}</a></li>  
+             </ul>  
+           </div>  
+         </div>
+        <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [ngSwitch]="menuType" class="collapse navbar-collapse">
+        <ul *ngSwitchCase="'default'" class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="seller">Seller</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" routerLink="home">Home</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" routerLink="user-auth">Login/ Signup</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" routerLink="cart">Cart({{cartItems}})</a>
+           </li>           
+        </ul>
+        <ul *ngSwitchCase="'user'" class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+             <a class="nav-link active" aria-current="page" routerLink="seller">Seller</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" routerLink="home">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link">{{userName}}</a>
+             </li>
+            <li class="nav-item">
+             <a class="nav-link" (click)="userLogout()">Logout</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" routerLink="my-order">My Order</a>
+              </li>
+            <li class="nav-item">
+             <a class="nav-link" routerLink="cart">Cart({{cartItems}})</a>
+            </li>           
+         </ul>
+        <ul *ngSwitchCase="'seller'" class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+         <li class="nav-item">
+          <a class="nav-link active" routerLink="seller-add-product">Add Product</a>
+         </li>
+         <li class="nav-item"><a class="nav-link" routerLink="seller-home">List</a></li>
+         <li class="nav-item"><a class="nav-link" (click)="logout()">Logout</a></li>
+         <li class="nav-item"><a class="nav-link" routerLink="">{{sellerName}}</a></li>
+         </ul>       
+        </div>
+        </div>
+    </div>
+    </nav> 
+</header>

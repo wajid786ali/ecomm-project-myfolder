@@ -1,0 +1,21 @@
+<div class="container mt-5">
+ <div class="row">
+ <div class="col-md-8 offset-md-2">
+ <div class="mb-2 border-bottom"><h3> Search Products</h3></div>
+  <div class="row mb-1 pb-2 pt-4 seach-item border-bottom" *ngFor="let item of searchProducts">
+    <div class="col-sm-4 text-center">
+      <div class="searchPro-Img"><a routerLink="/details/{{item.id}}">
+       <img src="{{item.imgUrl}}" alt="" width="200" height="200" /></a></div>
+    </div> 
+    <div class="col-sm-8">
+       <div class="h mb-2"><a routerLink="/details/{{item.id}}">{{item.name}}</a></div>
+       <p class="mb-1">Category : <span>{{item.category}}</span> </p>
+       <p class="mb-1">Color : <span>{{item.color}}</span> </p>
+       <p class="mb-1">Price : <span>{{item.price}}</span></p>
+       <p class="vwBtn mt-3"><a routerLink="/details/{{item.id}}" class="btn btn-outline-primary mr-2">View More</a> 
+        <a href="" class="btn btn-primary">Add To Cart</a></p>  
+    </div>
+  </div>
+</div>
+</div>
+</div>    

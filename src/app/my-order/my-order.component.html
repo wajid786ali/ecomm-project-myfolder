@@ -1,0 +1,22 @@
+<div class="container mt-5 cartList">
+    <div class="mb-5 pb-3 border-bottom"><h3>My Order</h3></div>
+    <div class="row">
+    <div class="col-md-8">
+    <table class="table table-bordered">
+      <tr>
+        <th>Image </th>
+        <th>Order Id</th>
+        <th>Price</th>
+        <th>Status</th>
+        <th>Cancel Order</th>
+      </tr> 
+      <tr *ngFor="let order of orderData">
+        <td><img src="" alt="" style="max-width:80px;max-height:80px;" /></td>
+        <td>{{order.id}}</td>
+        <td>Price {{order.payableAmount}}</td>
+        <td>Inprogess</td>        
+        <td><button><i class="fa fa-trash"></i></button></td>
+        </tr>  
+    </table>
+   </div> 
+</div>

@@ -1,0 +1,222 @@
+{
+  "seller": [
+    {
+      "name": "Rinkoo",
+      "email": "rinkoo@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "Aarav",
+      "email": "aarav@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "Aarush",
+      "email": "aarush@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "Rohit",
+      "email": "rohit@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "name": "Manoj",
+      "email": "manoj@gmail.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "name": "anil",
+      "email": "anil@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "name": "Rakesh",
+      "email": "rakesh@gmail.com",
+      "password": "12345",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "name": "Apple iPhone 15 (128GB, )",
+      "category": "Mobile",
+      "price": "89900",
+      "color": "Blue",
+      "description": "Key Features\nDisplay: 6.1 inches (15.54 cm), Super Retina XDR Display\nMemory: 128GB ROM\nProcessor: Apple A16 Bionic Chip, Hexa Core\nCamera: 48 MP + 12 MP Dual Rear & 12 MP Front Camera",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697018314/Croma%20Assets/Communication/Mobiles/Images/300684_0_qoabmw.png?tr=w-360",
+      "id": 1
+    },
+    {
+      "name": "Apple iPhone 15 (128GB)",
+      "category": "Mobile",
+      "price": "69900",
+      "color": "Black",
+      "description": "Key Features\nDisplay: 6.1 inches (15.54 cm), Super Retina XDR Display\nMemory: 128GB ROM\nProcessor: Apple A16 Bionic Chip, Hexa Core",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697018684/Croma%20Assets/Communication/Mobiles/Images/300652_0_ndr3y9.png?tr=w-360",
+      "id": 2
+    },
+    {
+      "name": "OnePlus Nord CE 3 Lite 5G (8GB RAM, 256GB)",
+      "category": "Mobile",
+      "price": "26999",
+      "color": "Gray",
+      "description": "Key Features\n6.7 inches (17.02 cm), AMOLED Display, 120Hz\nMemory: 8GB RAM, 128GB ROM\nProcessor: Qualcomm Snapdragon 782G, 8 Cores, 2.7 GHz",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697017854/Croma%20Assets/Communication/Mobiles/Images/270656_0_p6disg.png?tr=w-360",
+      "id": 3
+    },
+    {
+      "name": "OnePlus Nord CE3 5G (8GB RAM, 128GB)",
+      "category": "Mobile",
+      "price": "26999",
+      "color": "green",
+      "description": "Key Features\n6.7 inches (17.02 cm), AMOLED Display, 120Hz\nMemory: 8GB RAM, 128GB ROM\nProcessor: Qualcomm Snapdragon 782G, 8 Cores, 2.7 GHz",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1691050214/Croma%20Assets/Communication/Mobiles/Images/275685_iblzsb.png?tr=w-360",
+      "id": 4
+    },
+    {
+      "name": "realme 11x 5G (8GB RAM, 128GB)",
+      "category": "Mobile",
+      "price": "14699",
+      "color": "Purple",
+      "description": "Key Features\n6.72 inches (17.07 cm), Dynamic Ultra Smooth FHD Plus Display, 120 Hz Refresh Rate\nMemory: 8GB RAM, 128GB ROM\nProcessor: MediaTek Dimensity 6100 Plus 5G Chipset, Octa Core, 2.2GHz",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1692786137/Croma%20Assets/Communication/Mobiles/Images/300090_bxzzok.png?tr=w-360",
+      "id": 5
+    },
+    {
+      "name": "realme 11x 5G (8GB RAM, 128GB)",
+      "category": "Mobile",
+      "price": "14699",
+      "color": "Black",
+      "description": "Key Features\n6.72 inches (17.07 cm), Dynamic Ultra Smooth FHD Plus Display, 120 Hz Refresh Rate\nMemory: 8GB RAM, 128GB ROM\nProcessor: MediaTek Dimensity 6100 Plus 5G Chipset, Octa Core, 2.2GHz",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1692786268/Croma%20Assets/Communication/Mobiles/Images/300091_t1vcoj.png?tr=w-360",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "rinkoo",
+      "email": "rinkoo@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "aarav",
+      "email": "Aarav@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "Aarush",
+      "email": "aarush@gmail.com",
+      "password": "12345",
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "name": "Apple iPhone 15 (128GB, )",
+      "category": "Mobile",
+      "price": "89900",
+      "color": "Blue",
+      "description": "Key Features\nDisplay: 6.1 inches (15.54 cm), Super Retina XDR Display\nMemory: 128GB ROM\nProcessor: Apple A16 Bionic Chip, Hexa Core\nCamera: 48 MP + 12 MP Dual Rear & 12 MP Front Camera",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697018314/Croma%20Assets/Communication/Mobiles/Images/300684_0_qoabmw.png?tr=w-360",
+      "quantity": 1,
+      "userId": 3,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "name": "realme 11x 5G (8GB RAM, 128GB)",
+      "category": "Mobile",
+      "price": "14699",
+      "color": "Black",
+      "description": "Key Features\n6.72 inches (17.07 cm), Dynamic Ultra Smooth FHD Plus Display, 120 Hz Refresh Rate\nMemory: 8GB RAM, 128GB ROM\nProcessor: MediaTek Dimensity 6100 Plus 5G Chipset, Octa Core, 2.2GHz",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1692786268/Croma%20Assets/Communication/Mobiles/Images/300091_t1vcoj.png?tr=w-360",
+      "quantity": 1,
+      "userId": 3,
+      "productId": 6,
+      "id": 2
+    },
+    {
+      "name": "Apple iPhone 15 (128GB)",
+      "category": "Mobile",
+      "price": "69900",
+      "color": "Black",
+      "description": "Key Features\nDisplay: 6.1 inches (15.54 cm), Super Retina XDR Display\nMemory: 128GB ROM\nProcessor: Apple A16 Bionic Chip, Hexa Core",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697018684/Croma%20Assets/Communication/Mobiles/Images/300652_0_ndr3y9.png?tr=w-360",
+      "quantity": 1,
+      "userId": 3,
+      "productId": 2,
+      "id": 6
+    },
+    {
+      "name": "Apple iPhone 15 (128GB)",
+      "category": "Mobile",
+      "price": "69900",
+      "color": "Black",
+      "description": "Key Features\nDisplay: 6.1 inches (15.54 cm), Super Retina XDR Display\nMemory: 128GB ROM\nProcessor: Apple A16 Bionic Chip, Hexa Core",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697018684/Croma%20Assets/Communication/Mobiles/Images/300652_0_ndr3y9.png?tr=w-360",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 2,
+      "id": 7
+    },
+    {
+      "name": "realme 11x 5G (8GB RAM, 128GB)",
+      "category": "Mobile",
+      "price": "14699",
+      "color": "Purple",
+      "description": "Key Features\n6.72 inches (17.07 cm), Dynamic Ultra Smooth FHD Plus Display, 120 Hz Refresh Rate\nMemory: 8GB RAM, 128GB ROM\nProcessor: MediaTek Dimensity 6100 Plus 5G Chipset, Octa Core, 2.2GHz",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1692786137/Croma%20Assets/Communication/Mobiles/Images/300090_bxzzok.png?tr=w-360",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 5,
+      "id": 8
+    },
+    {
+      "name": "OnePlus Nord CE 3 Lite 5G (8GB RAM, 256GB)",
+      "category": "Mobile",
+      "price": "26999",
+      "color": "Gray",
+      "description": "Key Features\n6.7 inches (17.02 cm), AMOLED Display, 120Hz\nMemory: 8GB RAM, 128GB ROM\nProcessor: Qualcomm Snapdragon 782G, 8 Cores, 2.7 GHz",
+      "imgUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697017854/Croma%20Assets/Communication/Mobiles/Images/270656_0_p6disg.png?tr=w-360",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 3,
+      "id": 9
+    }
+  ],
+  "orders": [
+    {
+      "email": "rinkoo@gmail.com",
+      "address": "A-124 Delhi",
+      "contact": "+919899937732",
+      "payableAmount": 111698,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "munesh @gmail.com",
+      "address": "A-124 Delhi",
+      "contact": "981154485",
+      "payableAmount": 111698,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "payableAmount": 111698,
+      "userId": 1,
+      "id": 3
+    }
+  ]
+}

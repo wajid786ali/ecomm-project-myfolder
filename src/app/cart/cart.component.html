@@ -1,0 +1,49 @@
+<div class="container mt-5 cartList">
+    <div class="mb-5 pb-3 border-bottom"><h3>Cart</h3></div>
+    <div class="row">
+    <div class="col-md-8">
+    <table class="table table-bordered">
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr> 
+      <tr *ngFor="let cart of cartData">
+        <td><img src="{{cart.imgUrl}}" alt="" style="max-width:80px;max-height:80px;" /></td>
+        <td>{{cart.name}}</td>
+        <td>Quantity {{cart.quantity}}</td>
+        <td>Price {{cart.price}}</td>        
+        <td><button><i class="fa fa-edit"></i></button> 
+          <button><i class="fa fa-trash"></i></button></td>
+        </tr>  
+    </table>
+   </div> 
+   <div class="col-md-4">
+     <div class="border productSumm p-3">
+      <ul>
+        <li><span>Amount</span></li>
+        <li><span>{{priceSummary.price}}</span></li> 
+      </ul>
+      <ul>
+        <li><span>Discount</span></li>
+        <li><span>{{priceSummary.discount}}</span></li> 
+      </ul>
+      <ul>
+        <li><span>Tax</span></li>
+        <li><span>{{priceSummary.tax}}</span></li> 
+      </ul>
+      <ul>
+        <li><span>Delivery Charge</span></li>
+        <li><span>{{priceSummary.delivery}}</span></li> 
+      </ul>
+      <ul>
+          <li><span>Total Price</span></li>
+          <li><span>{{priceSummary.total}}</span></li> 
+        </ul>
+        <button (click)="checkoutLink()">Checkout</button> 
+     </div>
+   </div>
+   </div>
+</div>

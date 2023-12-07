@@ -1,0 +1,31 @@
+<div class="mt-2">
+<div class="container text-center">
+    <div class="sendEnq mt-5">
+    <h2 class="mb-4 text-center">Seller Add Product</h2>
+    <p class="text-center text-success mb-2">{{addProductMsg}}</p>
+    <form #sellerPro="ngForm" (ngSubmit)="addPro(sellerPro.value)">
+        <div class="mb-4">
+        <input type="text" name="name" class="form-control" placeholder="Enter Name" ngModel>
+        </div>
+        <div class="mb-4">
+        <input type="text" name="category" class="form-control" placeholder="Enter Category" ngModel>
+        </div>
+        <div class="mb-4">
+        <input type="text" name="price" class="form-control" placeholder="Enter Price" ngModel>
+        </div>
+        <div class="mb-4">
+        <input type="text" name="color" class="form-control" placeholder="Enter Color" ngModel>
+        </div>
+        <div class="mb-4">
+        <textarea name="description" class="form-control" placeholder="Enter description" ngModel>                
+        </textarea>
+        </div>
+        <div class="mb-4">
+        <input type="text" name="imgUrl" class="form-control" placeholder="Enter img url" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>          
+    </form>
+</div>
+</div>
+</div>
+
